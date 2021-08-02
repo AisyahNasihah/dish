@@ -2,9 +2,9 @@
 include "connection.php"; 
 
 if(isset($_POST['name'])){
-	$name =$_POST["namedish"];
+	$dish =$_POST["Dish"];
 
-	$sql = "SELECT * FROM dish WHERE dish_name LIKE '%$name%'";  
+	$sql = "SELECT * FROM dish WHERE dish_name LIKE '%$dish%'";  
 	$result = mysqli_query($conn, $sql);
 	$data = mysqli_fetch_assoc($result);
 
